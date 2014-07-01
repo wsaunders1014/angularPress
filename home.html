@@ -1,0 +1,25 @@
+<div class="container-fluid">
+
+<div class=row">
+	<div class="col-md-4">
+		<div class="ng-cloak">
+		Hello, {{currentUser.name.firstName +'!'}}<br>
+			<div new-post></div>
+		</div>
+	</div>
+	<div class="col-md-4" id="feed">
+		feed
+		<div ng-controller="PostController">			
+			<div ng-repeat="post in feed">
+				{{post.title}}<br/>
+				{{post.content}}
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<a href="#/admin">Admin</a><br/>
+		<a href="" ng-click="loginObj.$logout()">Log Out</a>
+	</div>
+</div>
+
+</div>

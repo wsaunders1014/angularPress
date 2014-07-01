@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="blog">
+<head>
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/scripts.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-controller="MainController as main">
+<div ng-view>
+
+</div>
+user:{{currentUser.email}}
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular-route.js"></script>
+<script type="text/javascript" src="app/app.js"></script>
+</body>
+</html>

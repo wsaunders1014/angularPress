@@ -1,0 +1,14 @@
+/* CSS */
+#menu ul {
+list-style:none;
+padding:0;
+margin:0;
+}
+#menu ul li {
+cursor:pointer;
+padding:0;
+margin:0;
+}
+.form-signin input, .form-signup input {
+margin-bottom:5px;
+}

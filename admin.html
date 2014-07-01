@@ -1,0 +1,29 @@
+<div class="container">
+	{{page}}
+	<a href="#/home">Home </a>
+	<div ng-show='loginObj.user'>
+		
+		
+		<div class="row">
+			<div class="col-md-3" id="menu">
+				<ul>
+					<li ng-model="selection" ng-click="changeView(0)"><a href="">Create New Post</a></li>
+					<li ng-model="selection" ng-click="changeView(1)"><a href="">Edit Post</a></li>
+					<li ng-model="selection" ><a href="" ng-click="loginObj.$logout()">Log Out</a></li>
+					<li ng-model="selection">View As User</li>
+				</ul>
+			</div>
+			<div class="col-md-8" id="content" ng-switch on="selection">
+				<div ng-switch-default>Welcome to the Admin Page.</div>
+				<div ng-switch-when="new">
+					<div new-post></div>
+				</div>
+				
+				<div ng-switch-when="edit">Edit Post</div>
+				<div ng-switch-when="postCreated">Post Created Successfully</div>
+				<div ng-switch-when="postFailed">Post was not created.</div>
+			</div>
+		</div>
+	</div>
+</div> 
+

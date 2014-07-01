@@ -1,0 +1,35 @@
+<div class="container-fluid">
+
+<div class="row">
+	<div class="col-md-4"></div>
+	<div class="col-md-4" id="login-div">
+		Welcome to AngularPress, a Tumblr like blog developed in AngularJS and firebase. Don't have an account?<br/>
+		<a href="#/signup">Sign Up</a>
+      <form name="login-form"  class="form-signin" role="form" ng-submit="login(credentials)" novalidate>
+       
+		<div ng-show="alert"  class="alert alert-danger"><strong>{{notices.header}}</strong> {{notices.message}}</div>
+        <input type="email" ng-model="credentials.email" class="form-control" placeholder="Email address" required >
+        <div class="row">
+			<div class="col-md-8">
+				<input type="password" ng-model="credentials.password" class="form-control" placeholder="Password" required>
+			</div>
+			<div class="col-md-4">
+				<button class="btn btn-md btn-primary btn-block" type="submit">Sign in</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-5">
+				<label class="checkbox">
+				  <input type="checkbox" value="remember-me"> Remember me
+				</label> 
+			</div>
+			<div class="col-md-7">
+				<a href="">Forgot Password?</a>
+			</div>
+		</div>
+      </form>
+	</div>
+	<div class="col-md-4"></div>
+</div>
+
+</div>

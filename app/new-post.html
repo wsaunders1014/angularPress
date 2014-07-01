@@ -1,0 +1,12 @@
+<div>
+	<form name="new-post" ng-submit="post.createPost(newpost)" novalidate>
+		<div class="form-group">
+			<label for="post-title"> Title</label>
+			<input class='form-control' type="text" name="title" ng-model='newpost.title' placeholder="Post Title" required><br/>
+			<label for="post-content">Post </label>
+			<textarea class='form-control' rows="8" name="content" ng-model='newpost.content' placeholder="Post content" required></textarea><br/>
+			<button class="btn btn-primary" type="submit">Create Post</button>
+		</div>
+	</form>
+	
+</div>

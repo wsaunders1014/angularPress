@@ -1,0 +1,17 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4"></div>
+		<div class="col-md-4" id="sign-up">
+			<h3>Sign up!</h3>
+			<form name="signup-form"  class="form-signup" role="form" ng-submit="signUp(newuser)" novalidate>
+			{{$scope.userData}}
+			<div ng-show="alert"  class="alert alert-danger"><strong>{{notices.header}}</strong> {{notices.message}}</div>
+			<input type="name" ng-model="newuser.fullname" class="form-control" placeholder="Full Name" value="test" required >
+			<input type="text" ng-model="newuser.username" class="form-control" placeholder="Username" value="test" required >
+			<input type="email" ng-model="newuser.email" class="form-control" placeholder="Email address" required >
+			<input type="password" ng-model="newuser.password" class="form-control" placeholder="Password" required>
+			<button class="btn btn-md btn-primary pull-right" type="submit">Sign Up!</button>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+</div>
